@@ -7,4 +7,5 @@ The final completed version of this lab is available in the `end-state` branch o
 
 ### Local Verification
 
-If you would like to see a version of this app using local verification, without Auth0, please checkout this repo: [auth0-lab/hol-verifier-local](https://github.com/auth0-lab/hol-verifier-local)
+If you would like to see a version of this app using local verification, without Auth0, please checkout this repo: 
+[auth0-lab/hol-verifier-local](https://github.com/auth0-lab/hol-verifier-local)
