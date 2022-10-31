@@ -96,7 +96,7 @@ export default function Home() {
             <Loader />
           ) : (
             <button className={styles.button} onClick={onClick}>
-              Start Presentation Flow with Auth0 Verification
+              Start Presentation Flow
             </button>
           )}
         </div>
