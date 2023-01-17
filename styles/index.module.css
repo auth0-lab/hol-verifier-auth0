@@ -57,3 +57,10 @@
 .flowselect {
   margin: 20px;
 }
+
+.jwt {
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 20px;
+}
