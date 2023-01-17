@@ -64,3 +64,10 @@
   padding: 20px 10px;
   background: none;
 }
+
+.jwt {
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 20px;
+}

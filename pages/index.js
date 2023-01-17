@@ -117,7 +117,7 @@ export default function Home() {
 
         {presentation && (
           <div className={styles.presentation}>
-            <pre>{JSON.stringify(presentation, null, 4)} </pre>
+            <pre className={styles.jwt}>{JSON.stringify(presentation, null, 4)} </pre>
           </div>
         )}
         {url && (
