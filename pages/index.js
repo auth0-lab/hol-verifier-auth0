@@ -68,7 +68,7 @@ export default function Home() {
       // Start polling for a result. This happens once the user
       // follows the walletUrl link and presents a credential from ID Walelt
       const { presentation } = await pollForPresentation(request_id);
-
+      presentation.verifiableCredential = presentation.verifiableCredential.map(parseJwt);
       setPresentation(presentation);
     } catch (err) {
       console.log(err);
@@ -81,6 +81,15 @@ export default function Home() {
     setLoading(false);
     setPresentation();
     setUrl("");
+  };
+
+  const parseJwt = (token) => {
+    if (!token) {
+      return;
+    }
+    const base64Url = token.split(".")[1];
+    const base64 = base64Url.replace("-", "+").replace("_", "/");
+    return JSON.parse(window.atob(base64));
   };
 
   return (
@@ -96,7 +105,7 @@ export default function Home() {
             <Loader />
           ) : (
             <button className={styles.button} onClick={onClick}>
-              Start Presentation Flow with Auth0 Verification
+              Start Presentation Flow
             </button>
           )}
         </div>
