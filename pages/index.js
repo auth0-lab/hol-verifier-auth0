@@ -62,7 +62,7 @@ export default function Home() {
 
       // walletUrl would normally be encoded into a QR code that a user
       // would scan with the wallet app.
-      const walletUrl = url.replace("openid://", "https://wallet.verifiablecredentials.dev/siop");
+      const walletUrl = url.replace("openid-vc://", "https://wallet.verifiablecredentials.dev/siop");
       setUrl(walletUrl);
 
       // Start polling for a result. This happens once the user
